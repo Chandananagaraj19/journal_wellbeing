@@ -1,9 +1,9 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #d9afd9, #97d9e1);
+  background: url('back4.jpg') no-repeat center center fixed;
+  background-size: cover;
   margin: 0;
-  padding: 0;
-}
+  padding: 0;}
 .container {
   max-width: 800px;
   margin: 50px auto;
