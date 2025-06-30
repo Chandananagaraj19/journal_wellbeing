@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mental Health Journal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Your Mental Health Journal</h1>
+    <form id="journalForm">
+      <label>Mood:</label>
+      <select id="mood" required>
+        <option value="">Choose</option>
+        <option value="😊 Happy">😊 Happy</option>
+        <option value="😔 Sad">😔 Sad</option>
+        <option value="😠 Angry">😠 Angry</option>
+        <option value="😰 Anxious">😰 Anxious</option>
+      </select>
+
+      <label>Rate Your Day (1 to 10):</label>
+      <input type="range" id="rating" min="1" max="10" value="5" />
+      <span id="ratingValue">5</span>
+
+      <label>Journal:</label>
+      <textarea id="entry" rows="5" placeholder="What happened today?" required></textarea>
+
+      <label>Upload a photo or video:</label>
+      <input type="file" id="media" accept="image/*,video/*" />
+
+      <button type="submit">Save Entry</button>
+    </form>
+
+    <a href="calendar.html"><button>📅 View Calendar</button></a>
+
+    <div id="entries"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
